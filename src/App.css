@@ -1,0 +1,252 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.all {
+  display: flex;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.section {
+  background-image: url(./assest/images/bg.png);
+  background-size: cover;
+  background-attachment: scroll;
+  width: 100vw;
+  height: 100vh;
+}
+.take {
+  position: relative;
+  text-align: center;
+  top: 205px;
+  color: white;
+  font-weight: 500;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.section3 {
+  background-image: url(./assest/images/millionairebb.jpg);
+  background-size: cover;
+  background-attachment: scroll;
+  width: 100vw;
+  height: 110vh;
+  margin-top: -34px;
+}
+label {
+  color: white;
+  font-weight: 700;
+}
+.sep {
+  padding: 22px 0;
+}
+
+/* padding: 13px 0px; */
+/* height: 8vh; */
+/* margin: 19px 0px; */
+/* margin-right: 8px; */
+
+.ss {
+  position: relative;
+  top: 108px;
+}
+.section4 {
+  background-image: url(./assest/images/millionairebb.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+.who {
+  height: 22px;
+  /* padding: 10px 0px; */
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.translated {
+  /* transform: translateX(25vw); */
+  position: relative;
+  bottom: 33px;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.left {
+  background-color: #c79bd3;
+}
+#first {
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+}
+.que {
+  position: relative;
+  top: 28px;
+}
+
+.now {
+  display: inline-block;
+}
+.bg-nav {
+  background-color: #d92d20;
+  padding: 13px 0px;
+  background-attachment: fixed;
+}
+.okay {
+  background-color: blue;
+  height: 79vh;
+}
+@media screen and (max-min: 414px) {
+  .section4 {
+    background-image: url(./assest/images/millionairebb.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+/* //side bar for dashboard */
+@import url("https://fonts.googleapis.com/css?family=poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif, "poppins";
+}
+body {
+  min-height: 100vh;
+}
+.navigation {
+  position: fixed;
+  width: 60px;
+  height: 150%;
+  background: #071348;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.navigation:hover,
+.navigation.active {
+  width: 250px;
+}
+.container.active {
+  width: calc(100% - 300px);
+  margin-left: 300px;
+}
+.navigation.active,
+.navigation:hover ~ .container {
+  margin-right: -10px;
+}
+.navigation:hover ~ .container {
+  margin-left: 300px;
+}
+.navigation ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.navigation ul li {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  margin-left: -28px;
+}
+.navigation ul li button {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  margin-left: -13px;
+}
+.navigation ul li:hover {
+  background: #020019;
+  width: 250px;
+  border-radius: 10px 0 0 10px;
+}
+.navigation ul li a {
+  position: relative;
+  display: none;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+}
+.navigation ul li a .icon {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+.navigation ul li a .icon .fa {
+  font-size: 24px;
+}
+.navigation ul li a .title {
+  position: relative;
+  display: block;
+  padding: 0 10px;
+  height: 60px;
+  line-height: 60px;
+  text-align: start;
+  white-space: nowrap;
+}
+.toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background: #071348;
+  cursor: pointer;
+}
+.toggle.active {
+  background: #1b3fe0;
+}
+.toggle::before {
+  content: "\f0c9";
+  font-family: fontAwesome;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 60px;
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+}
+.toggle.active::before {
+  content: "\f00d";
+}
+@media (max-width: 767px) {
+  .navigation {
+    left: -60px;
+  }
+  .navigation.active {
+    left: 0px;
+    width: 100%;
+  }
+  .navigation ul li:hover {
+    width: 370px;
+  }
+}
