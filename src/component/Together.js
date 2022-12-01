@@ -9,12 +9,12 @@ const Together = () => {
                         <div className='surround mb-5'>
                             <h2>In this together.<br />
                                 Keeping  you securely
-                                connected wherever you are.
+                                connected  wherever you are.
                             </h2>
                         </div>
                         <div className='flip text-center mb-4'>
                             <input type="text" className='form-control bg-white ms-5 mb-4 border rounded rounded-3 me-3 shadow shadow-sm' style={{ width: "300px" }} placeholder='Enter your work email' />
-                            <a className='sign-up' href='#' style={{ height: "50px" }}>Sign Up Free</a>
+                            <a className='sign-up ms-5' href='#' style={{ height: "50px" }}>Sign Up Free</a>
                         </div>
                         <div className='policy ms-5'>
                             <p className='out mx-2' style={{ color: "##5a5a5a" }}>Check out our </p>

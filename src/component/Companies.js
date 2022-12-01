@@ -22,7 +22,7 @@ const Companies = () => {
                     <div className="carousel-inner ">
                         <div className="row justify-content-center">
                             <div className="col-lg-10 text-center">
-                                <div className="carousel-item active" data-bs-interval="10000" >
+                                <div className="carousel-item active" data-bs-interval="1000" >
                                     <div className='trust'>
                                         <img src={Docus} className=" img-responsive img-fluid pt-5" style={{
                                             width: "150px"
@@ -79,7 +79,6 @@ const Companies = () => {
                         </div>
                     </div>
                 </div>
-
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span className="visually-hidden">Previous</span>

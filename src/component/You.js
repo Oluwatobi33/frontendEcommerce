@@ -15,7 +15,6 @@ import Zoom from './Zoom'
 const You = () => {
     return (
         <>
-            <Together />
             <div className='container mt-5'>
                 <div className="row">
                     <div className="col-md-6 col-lg-6">
@@ -102,7 +101,6 @@ const You = () => {
                     </div>
                 </div>
             </div >
-            <Zoom />
             <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
                 <div className="container">
                     <div className="carousel-inner">
@@ -173,9 +171,9 @@ const You = () => {
                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Next</span>
             </button>
-            <div className="container " style={{ margin: "104px 0px" }}>
+            <div className="container ms-5" style={{ margin: "104px 0px" }}>
                 <div className="row justify-content-center">
-                    <div className="col-lg-9 col-md-9 text-center  nn ">
+                    <div className="col-lg-7 col-md-7 text-center  nn ">
                         <div className="second">
                             <img src={fox} className='img-responsive img-fluid' alt="myob" />
                         </div>
