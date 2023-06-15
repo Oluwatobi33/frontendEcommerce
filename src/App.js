@@ -21,8 +21,9 @@ import Contact from './component/Contact';
 import About from './component/About';
 import Footer from './component/Footer';
 import Checkout from './component/Checkout';
-import Reset from './component/Reset';
-import ForgetPassword from './component/ForgetPassword';
+// import Reset from './component/Reset';
+// import ForgetPassword from './component/ForgetPassword';
+import Resetpwd from './component/Resetpwd';
 function App() {
 
 
@@ -50,8 +51,8 @@ function App() {
         <Route path="/About" element={<About />} />
         <Route path="/Checkout" element={<Checkout />} />
         <Route path="/Footer" element={<Footer />} />
-        <Route path="/Reset" element={<Reset />} />
-        <Route path="/ForgetPassword/id:token" element={<ForgetPassword />} />
+        {/* <Route path="/Reset" element={<Reset />} /> */}
+        <Route path="/Resetpwd" element={<Resetpwd />} />
 
 
       </Routes>

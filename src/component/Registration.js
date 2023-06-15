@@ -116,6 +116,34 @@ const Registration = () => {
         }),
     });
 
+
+    const ForgetPwd = () => {
+        // setloaders(prev => true)
+        if (mail != "") {
+            setmailErr()
+            axios.post(`${baseurl}forgetpassword`, { mail }).then((data) => {
+                if (data) {
+                    console.log(data.data);
+                    let mes = data.data.message;
+                    if (mes != "Email not found") {
+                        // setloaders(prev => false)
+                        setmailErr("Check your mail to rest your password")
+                        setTimeout(() => {
+                            setFpasswor(prev => false)
+                        }, 9000);
+                    } else {
+                        // setloaders(prev => false)
+                        setmailErr("Email not found")
+                    }
+                }
+            })
+        } else {
+            // setloaders(prev => false)
+            setmailErr("Please provide your email address below")
+        }
+    }
+
+
     const toggle = useRef()
     const i = useRef()
     const password = useRef()
@@ -176,7 +204,7 @@ const Registration = () => {
                                 )}
                             </div>
                         </div>
-                        <a href="#" className="mt-4">Forgot Password?</a>
+                        <a href="#" className="mt-4" onClick={ForgetPwd}>Forgot Password?</a>
                         <button type="submit" className="btn66" value="Login"
                         >Login{loader && (
                             <div className="spinner">
