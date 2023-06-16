@@ -14,6 +14,9 @@ const Registration = () => {
     const [Error, setError] = useState("");
     const [first, setfirst] = useState(true)
     const [loader, setloader] = useState(false)
+    const [mailErr, setmailErr] = useState("")
+    const [mail, setmail] = useState("")
+    const [passwor, setFpasswor] = useState("")
 
     let lower = new RegExp(`(?=.*[a-z])`);
     let upper = new RegExp(`(?=.*[A-Z])`);
