@@ -139,7 +139,7 @@ const Dashboard = () => {
                     <span className="navbar-toggler-icon bg-white text-white"></span>
                 </button>
                 <div className="collapse navbar-collapse justify-content-" id="navbarSupportedContent">
-                    <div className="input-group mb-3 me-3">
+                    <div className="input-group mb-3 me-3 py-3">
                         <button className="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">All</button>
                         <ul className="dropdown-menu">
                             <li><a className="dropdown-item" href="#">All Departments</a></li>
@@ -201,7 +201,7 @@ const Dashboard = () => {
                     </li> */}
                 </div>
             </nav>
-            <nav className="navbar navbar-expand-md bg-dark">
+            <nav className="navbar navbar-expand-md bg-dark whole">
                 <button className="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>

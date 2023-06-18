@@ -23,11 +23,11 @@ const Registration = () => {
     let number = new RegExp(`(?=.*[0-9])`);
 
     const login = () => {
-        setfirst(prev => true)
+        setfirst(true)
     }
 
     const register = () => {
-        setfirst(prev => false)
+        setfirst(false)
     }
 
     const signup = useFormik({
@@ -41,13 +41,13 @@ const Registration = () => {
             axios.post(`${baseurl}signup`, values).then((credentials) => {
                 if (credentials) {
                     let Err = credentials.data.message;
-                    if (Err == "Email already used") {
+                    if (Err == "it didn't send") {
                         setError(Err)
-                        setloader(prev => false)
-                        setError("Email already used");
+                        setloader(false)
+                        // setError("Email already used");
                     } else {
-                        setloader(prev => false)
-                        setfirst(prev => true)
+                        setloader(false)
+                        setfirst(true)
                     }
                 }
             })
@@ -118,7 +118,6 @@ const Registration = () => {
                 .min(5, "password is weak, must be greater than 5 charaters"),
         }),
     });
-
 
     const ForgetPwd = () => {
         // setloaders(prev => true)
