@@ -1,8 +1,8 @@
 let baseurl;
 
 if (process.env.NODE_ENV == 'production') {
-    baseurl = 'https://backende-5220.onrender.com/';
+    baseurl = 'https://ecommerctobi.onrender.com';
 } else {
-    baseurl = 'https://localhost:5100';
+    baseurl = 'http://localhost:5100/';
 }
 export { baseurl }
