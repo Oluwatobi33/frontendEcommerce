@@ -84,21 +84,17 @@ const Registration = () => {
                     if (Err == "Email not found") {
                         setloader(prev => false)
                         setError("Email not found");
-                    } else if (Err == "Invaild password") {
-                        setloader(prev => false)
-                        setError("Invaild password");
                     } else {
                         if (Err == 'Token generated') {
                             localStorage.customer = credentials.data.token
                             console.log(credentials.data.token);
-                            setloader(prev => false)
                             navigate("/dashboard")
+                            setloader(false)
                         } else {
-                            if (Err == "Invalid Token") {
-                                localStorage.removeItem("customer")
-                                navigate("/registration")
-                                setloader(false)
-                            }
+                            localStorage.removeItem("customer")
+                            navigate("/registration")
+                            setloader(false)
+
                         }
                     }
                 }
