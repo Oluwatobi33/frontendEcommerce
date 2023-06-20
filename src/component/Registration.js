@@ -29,7 +29,6 @@ const Registration = () => {
     const register = () => {
         setfirst(false)
     }
-
     const signup = useFormik({
         initialValues: {
             Name: "",
@@ -44,10 +43,11 @@ const Registration = () => {
                     if (Err == "it didn't send") {
                         setError(Err)
                         setloader(false)
-                        // setError("Email already used");
                     } else {
-                        setloader(false)
-                        setfirst(true)
+                        if (Err == "Signup successfully") {
+                            setError(Err)
+                            setloader(true)
+                        }
                     }
                 }
             })
@@ -84,18 +84,21 @@ const Registration = () => {
                     if (Err == "Email not found") {
                         setloader(prev => false)
                         setError("Email not found");
-                    } else {
-                        if (Err == 'Token generated') {
+                    } else if (Err == "Invaild password") {
+                        setloader(false)
+                        setError("Invaild password");
+                    }
+                    else {
+                        if (Err == "Token generated") {
                             localStorage.customer = credentials.data.token
                             console.log(credentials.data.token);
                             navigate("/dashboard")
-                            setloader(false)
                         } else {
                             localStorage.removeItem("customer")
                             navigate("/registration")
                             setloader(false)
-
                         }
+
                     }
                 }
             })
