@@ -91,6 +91,7 @@ const Dashboard = () => {
                         console.log(Err);
                         if (Err == "Valid Token") {
                             setcustomers(data.data.result[0]);
+                            localStorage.userprofile = data.data.result[0]
                             localStorage.customerId = data.data.result[0]._id
                             console.log(localStorage.customerId);
                             axios.post(`${baseurl}addtocart`, { val, customerId })

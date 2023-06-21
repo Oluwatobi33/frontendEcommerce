@@ -145,7 +145,7 @@ const Viewproduct = () => {
                     </li>
                 </div>
             </nav>
-            <nav className="navbar navbar-expand-md bg-dark">
+            <nav className="navbar navbar-expand-md bg-dark whole">
                 <button className="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>

@@ -10,7 +10,7 @@ import { useFormik } from "formik";
 
 const Addtocart = () => {
     var totalPrice = 0;
-
+    const userprofile = localStorage.userprofile
     const customer = localStorage.customer;
     const customerId = localStorage.customerId;
     console.log(customerId);
@@ -48,6 +48,7 @@ const Addtocart = () => {
                             axios.post(`${baseurl}getaddtocart`, { id: customerId }).then((data) => {
                                 if (data) {
                                     setaddtocart(data.data.result)
+                                    setifo(userprofile)
                                 }
                             })
                         } else {
@@ -151,8 +152,8 @@ const Addtocart = () => {
             let ordered = addtocart.map((val) => {
                 let price = (val.price);
                 let product = (val.productname);
-                let information = (val.information);
-                let income = { price, product, information }
+                let description = (val.description);
+                let income = { price, product, description }
                 return (income)
             });
             const allinfor = { Name, email, ordered, Location, id };
@@ -160,11 +161,12 @@ const Addtocart = () => {
                 if (data) {
                     let mes = data.data.message
                     if (mes == "Mailed send") {
-                        axios.post(`${baseurl}removecart`, { id }).then((data) => {
-                            if (data) {
-                                console.log(data);
-                            }
-                        })
+
+                        // axios.post(`${baseurl}removecart`, { id }).then((data) => {
+                        //     if (data) {
+                        //         console.log(data);
+                        //     }
+                        // })
                     }
                 }
             })

@@ -234,8 +234,8 @@ const Registration = () => {
                 </div>
                 )}
                 {!first && (<div className="login-content">
-                    <h3 className={Error ? "alert alert-danger" : ""}>{Error}</h3>
                     <form className="form66" onSubmit={signup.handleSubmit}>
+                        <h3 className={Error ? "alert alert-danger" : ""}>{Error}</h3>
                         <img src={avatar} />
                         <h2 className="title66">Welcome</h2>
                         <div className="input-div one">

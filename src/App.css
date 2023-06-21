@@ -688,7 +688,7 @@ body {
   .expand {
     background-repeat: no-repeat !important;
     background-size: contain !important;
-    height: 60vh !important;
+    /* height: 60vh !important; */
   }
   .or li {
     display: inline-block;
