@@ -568,6 +568,14 @@ body {
     display: inline-block;
     font-size: 9px !important;
   }
+  .slide-container {
+    height: 100vh !important;
+  }
+  .expand {
+    background-repeat: no-repeat !important;
+    /* background-size: contain !important; */
+    /* height: 60vh !important; */
+  }
 }
 
 .obj li {
@@ -680,20 +688,6 @@ body {
   text-decoration: none;
   padding: 0px 12px;
   font-weight: 400;
-}
-@media screen and (max-width: 414px) {
-  .slide-container {
-    height: 100vh !important;
-  }
-  .expand {
-    background-repeat: no-repeat !important;
-    background-size: contain !important;
-    /* height: 60vh !important; */
-  }
-  .or li {
-    display: inline-block;
-    font-size: 9px !important;
-  }
 }
 .obj li {
   display: inline-block !important;

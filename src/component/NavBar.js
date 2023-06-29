@@ -88,8 +88,8 @@ const NavBar = () => {
                     </ul>
                 </div>
             </nav>
-
         </>
     )
 }
+
 export default NavBar
