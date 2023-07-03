@@ -14,7 +14,6 @@ import Signin from './component/Signin';
 import Home from './component/Home';
 import Slider from './component/Slider';
 import Addtocart from './component/Addtocart';
-import Registration from './component/Registration';
 import Dashboard from './component/Dashboard';
 import Viewproduct from './component/Viewproduct';
 import Contact from './component/Contact';
@@ -24,6 +23,8 @@ import Checkout from './component/Checkout';
 // import Reset from './component/Reset';
 // import ForgetPassword from './component/ForgetPassword';
 import Resetpwd from './component/Resetpwd';
+import Login from './component/Login';
+import Register from './component/Register';
 function App() {
 
 
@@ -44,16 +45,15 @@ function App() {
         <Route path='/Slider' element={<Slider />} />
         <Route path="/Addtocart" element={<Addtocart />} />
         <Route path="/viewproduct" element={<Viewproduct />} />
-        <Route path="/Registration" element={<Registration />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/Dashboard" element={<Dashboard />} />
         <Route path="/productdet" element={<Productdet />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/About" element={<About />} />
         <Route path="/Checkout" element={<Checkout />} />
         <Route path="/Footer" element={<Footer />} />
-        {/* <Route path="/Reset" element={<Reset />} /> */}
         <Route path="/Resetpwd" element={<Resetpwd />} />
-
+        <Route path="/login" element={<Login />} />
 
       </Routes>
     </>

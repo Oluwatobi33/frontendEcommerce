@@ -32,7 +32,7 @@ const Viewproduct = () => {
                 }
             })
         } else {
-            navigate("/registration")
+            navigate("/register")
         }
     }, []);
 
@@ -54,12 +54,12 @@ const Viewproduct = () => {
                 else {
                     localStorage.removeItem('customer')
                     localStorage.removeItem('customerId')
-                    navigate("/registration")
+                    navigate("/register")
                 }
 
             })
         } else {
-            navigate("/Registration")
+            navigate("/register")
             localStorage.removeItem('customer')
             localStorage.removeItem('customerId')
         }

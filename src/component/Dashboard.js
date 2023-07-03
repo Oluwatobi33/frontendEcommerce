@@ -36,7 +36,7 @@ const Dashboard = () => {
                 console.log(err);
             })
         } else {
-            navigate('/registration')
+            navigate('/register')
         }
 
         // axios.post(`${baseurl}getaddtocart`, { id: customerId }).then((data) => {
@@ -56,7 +56,7 @@ const Dashboard = () => {
             else {
                 localStorage.removeItem('customer')
                 localStorage.removeItem('customerId')
-                navigate("/registration")
+                navigate("/register")
             }
 
         })
@@ -105,7 +105,7 @@ const Dashboard = () => {
                     }
                 })
         } else {
-            navigate("/registration")
+            navigate("/register")
         }
     }
 
