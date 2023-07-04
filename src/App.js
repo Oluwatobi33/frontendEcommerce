@@ -53,7 +53,7 @@ function App() {
         <Route path="/Checkout" element={<Checkout />} />
         <Route path="/Footer" element={<Footer />} />
         <Route path="/Resetpwd" element={<Resetpwd />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/Login" element={<Login />} />
 
       </Routes>
     </>

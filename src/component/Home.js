@@ -28,9 +28,9 @@ const Home = () => {
     const navigate = useNavigate()
     const display = () => {
         if (customer) {
-            navigate('/registration')
+            navigate('/register')
         } else {
-            navigate('/registration')
+            navigate('/register')
         }
 
     }

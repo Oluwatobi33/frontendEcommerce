@@ -51,7 +51,7 @@ const NavBar = () => {
                             Account & Lists
                         </a>
                         <ul className="dropdown-menu">
-                            <li><a className="dropdown-item" href="#"> <Link to='/registration'>Sign-up</Link></a></li>
+                            <li><a className="dropdown-item" href="#"> <Link to='/register'>Sign-up</Link></a></li>
                             <li><a className="dropdown-item" href="#"><Link to="/contact">Contact</Link></a></li>
                         </ul>
                     </li>
@@ -81,7 +81,7 @@ const NavBar = () => {
                             create account
                         </a>
                         <ul className="dropdown-menu">
-                            <li><a className="dropdown-item" href="#"> <Link to='/registration'>Sign-up</Link></a></li>
+                            <li><a className="dropdown-item" href="#"> <Link to='/register'>Sign-up</Link></a></li>
                             <li><a className="dropdown-item text-dark" href="#"><Link to="/contact">Contact</Link></a></li>
                             <li><a className="dropdown-item" href="#">Login</a></li>
                         </ul>
