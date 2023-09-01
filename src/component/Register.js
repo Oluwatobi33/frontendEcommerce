@@ -9,7 +9,7 @@ import NavBar from "./NavBar";
 import bg from "../assest/images/bg.svg"
 import avatar from "../assest/images/avatar.svg"
 import wave from "../assest/images/wave.png";
-import { ToastContainer, toast } from "react-toastify"
+// import { ToastContainer, toast } from "react-toastify"
 import 'react-toastify/dist/ReactToastify.css'
 const Register = () => {
     const navigate = useNavigate();
@@ -50,9 +50,9 @@ const Register = () => {
             axios.post(`${baseurl}signup`, values).then((credentials) => {
                 if (credentials) {
                     let Err = credentials.data.message;
-                    if (Err == "Signup unsuccessful") {
+                    if (Err == "unsignup successfully") {
                         setError(Err)
-                        setloader(false)
+                        // setloader(false)
                     } else {
                         if (Err == "Signup successfully") {
                             setError(Err)

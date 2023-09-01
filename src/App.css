@@ -573,7 +573,7 @@ body {
   }
   .expand {
     background-repeat: no-repeat !important;
-    /* background-size: contain !important; */
+    background-size: cover !important;
     /* height: 60vh !important; */
   }
 }

@@ -23,6 +23,7 @@ const Login = () => {
         })
     }
 
+
     const navigate = useNavigate();
     const [Error, setError] = useState("");
     const [first, setfirst] = useState(true)
@@ -55,6 +56,7 @@ const Login = () => {
                         if (Err == "Token generated") {
                             localStorage.customer = credentials.data.token
                             console.log(credentials.data.token);
+                            <ToastContainer />
                             navigate("/dashboard")
                         } else {
                             localStorage.removeItem("customer")
@@ -161,7 +163,6 @@ const Login = () => {
                                 <div className="bounce3"></div>
                             </div>
                         )}</button>
-                        <ToastContainer />
                         <div className="row mt-3 text-white mt-4">
                             <div className="col-md-12">
                                 <div className="row">

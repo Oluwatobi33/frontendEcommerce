@@ -12,7 +12,7 @@ const Contact = () => {
     const [Error, setError] = useState("");
     const [message, setmessage] = useState("");
     const [loader, setloader] = useState(false);
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     let year = new Date().toLocaleDateString();
     let time = new Date().toLocaleTimeString();

@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { useEffect, useState } from "react";
 import axios from 'axios';
 import { baseurl } from "./Endpoint";
-import Navbar from './NavBar'
+// import Navbar from './NavBar'
 import Footer from './Footer';
 import amazon from '../assest/images/amazon.webp'
 import { Link } from 'react-router-dom';

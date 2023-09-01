@@ -44,10 +44,14 @@ const Addtocart = () => {
                 }).then((data) => {
                     if (data) {
                         let Err = data.data.message;
+                        // let info = data.data.result;
+                        // console.log(info);
                         if (Err == "Valid Token") {
+                            // setifo(info)
                             axios.post(`${baseurl}getaddtocart`, { id: customerId }).then((data) => {
                                 if (data) {
                                     setaddtocart(data.data.result)
+                                    console.log(data.data.result);
                                     setifo(userprofile)
                                 }
                             })
@@ -59,7 +63,7 @@ const Addtocart = () => {
                     }
                 })
         } else {
-            navigate("/registration")
+            navigate("/register")
         }
     }, [])
 
@@ -103,13 +107,13 @@ const Addtocart = () => {
     const display = () => {
         if (totalPrice > 0) {
             if (Location != "") {
-                setdis(prev => true)
-                setERR(prev => false)
+                setdis(true)
+                setERR(false)
                 setTimeout(() => {
-                    setdis(prev => false)
+                    setdis(false)
                 }, 60500);
             } else {
-                setERR(prev => true)
+                setERR(true)
             }
         }
     };
@@ -121,7 +125,7 @@ const Addtocart = () => {
     });
 
 
-    const handleSelectChange = (e) => {
+    const handleSelectChange = () => {
         let selectedOpt = document.getElementById("selectOptions");
         setLocation(selectedOpt.value);
     };
@@ -350,7 +354,7 @@ const Addtocart = () => {
                                         <p>
                                             <b className="text-danger"><marquee className="card">Please click on the button below, (only) after payment to Confirm transaction</marquee></b>
                                         </p>
-                                        <button type="button" className=" btn btn-success" onClick={mailler}><a href="https://wa.me/2347032437182" className='text-white'>Confirm transaction</a></button>
+                                        <button type="submit" className=" btn btn-success" onClick={mailler}><a href="https://wa.me/2347032437182" className='text-white'>Confirm transaction</a></button>
                                     </div>
                                 )}
                             </div>

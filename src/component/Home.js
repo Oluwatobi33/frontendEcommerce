@@ -1,17 +1,17 @@
 import React from 'react'
 import NavBar from './NavBar'
 import Product from './Product'
-import axios from 'axios'
-import { baseurl } from '../component/Endpoint'
-import { useState, useEffect } from 'react'
+// import axios from 'axios'
+// import { baseurl } from '../component/Endpoint'
+// import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import { Slide } from 'react-slideshow-image';
 import Footer from './Footer'
 import 'react-slideshow-image/dist/styles.css'
 import product1 from "../assest/images/product1.jpg"
 import product2 from "../assest/images/product2.jpg"
-import product3 from "../assest/images/product3.jpg"
+// import product3 from "../assest/images/product3.jpg"
 import product4 from "../assest/images/product4.jpg"
 import samsung from "../assest/images/Samsung-Galaxy.jpg"
 import product7 from "../assest/images/product7.jpg"
@@ -122,11 +122,11 @@ const Home = () => {
             </div> */}
 
             <div onClick={() => display()}>
-                <div className="container-fluid  py-5 mx-5">
+                <div className="container  py-5">
                     <div className='text-center'>
                         <h2 className='recent h1'>New Arrivals</h2>
                     </div>
-                    <div className="row py-5">
+                    <div className="row py-5 align-item-center">
                         <div className="col-md-3">
                             <div className="card border border-0" style={{ width: "18rem" }}>
                                 <img src={product1} className="card-img-top img-responsive img-fluid" alt="..." />
@@ -166,14 +166,12 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-
             <div className="container">
                 <div className="row justify-content-center">
                     <p className='fw-bold text-center h1'>Top Phones Deals</p>
                 </div>
             </div>
-
-            <div className='container-fluid mb-5'>
+            <div className='container mb-5'>
                 <div className="row">
                     <div onClick={() => display()}>
                         <div className="col-md-12">
@@ -213,8 +211,8 @@ const Home = () => {
                                         <img src={samsung} className='card-img-top top1' style={{ width: "300px" }} alt="favpurite" />
                                     </div>
                                 </div>
-                                <div className="card border border-0 flow">
-                                    <div className="card-body item">
+                                <div className="card border border-0">
+                                    <div className="card-body">
                                         <h2 className="card-title  right">Samsung Galaxy A14 6.6" 4GB RAM/128GB ROM Android 13 - Black</h2>
                                         <p className="card-text select">₦ 106,000</p>
                                         <img src={product2} className='card-img-top top1' style={{ width: "300px" }} alt="from" />
