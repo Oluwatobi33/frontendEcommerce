@@ -16,9 +16,6 @@ const Signin = () => {
   let myStyle = {
     fontSize: "20px",
   };
-  // let mySpa = {
-  //     color: '#1FC69D'
-  // }
   let lower = new RegExp(`(?=.*[a-z])`);
   let upper = new RegExp(`(?=.*[A-Z])`);
   let number = new RegExp(`(?=.*[0-9])`);
